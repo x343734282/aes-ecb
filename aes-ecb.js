@@ -8,15 +8,26 @@
 var crypto = require('crypto');
 
 function encryptTo128(key, text, outEncoding) {
-	// 
+	if (key.length != 16) {
+		throw new Error('the key length must 16');
+	}
+
 	return encrypt('aes-128-ecb', text, key, outEncoding);
 }
 
 function encryptTo192(key, text, outEncoding) {
+	if (key.length != 24) {
+		throw new Error('the key length must 24');
+	}
+
 	return encrypt('aes-192-ecb', text, key, outEncoding);
 }
 
 function encryptTo256(key, text, outEncoding) {
+	if (key.length != 32) {
+		throw new Error('the key length must 32');
+	}
+
 	return encrypt('aes-256-ecb', text, key, outEncoding);
 }
 
@@ -50,14 +61,25 @@ function decrypt(algorithm, key, encryptText, encryptEncoding, outEncoding) {
 }
 
 function decrypt128(key, text, encryptEncoding, outEncoding) {
+	if (key.length != 16) {
+		throw new Error('the key length must 16');
+	}
 	return decrypt('aes-128-ecb', key, text, encryptEncoding, outEncoding);
 }
 
 function decrypt192(key, text, encryptEncoding, outEncoding) {
+	if (key.length != 24) {
+		throw new Error('the key length must 24');
+	}
+
 	return decrypt('aes-192-ecb', key, text, encryptEncoding, outEncoding);
 }
 
 function decrypt256(key, text, encryptEncoding, outEncoding) {
+	if (key.length != 32) {
+		throw new Error('the key length must 32');
+	}
+
 	return decrypt('aes-256-ecb', key, text, encryptEncoding, outEncoding);
 }
 
