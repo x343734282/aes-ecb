@@ -1,0 +1,16 @@
+{
+  "name": "aes-ecb",
+  "version": "1.0.0",
+  "description": "aes-ecb nodejs implement for communication with others languages like java, .net.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "aec",
+    "ecb"
+  ],
+  "author": "john",
+  "license": "ISC"
+}
