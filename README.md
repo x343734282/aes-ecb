@@ -1,7 +1,7 @@
 # aes-ecb
 aes-ecb nodejs implement for communication with others languages like java, .net.
 
-#API
+# API
 encrype
 aes-128-ecb
 encrype.bit128(key,text,outEncoding)
@@ -18,7 +18,7 @@ decrypt.bit192(key,text,encryptEncoding,outEncoding)
 aes-256-ecb
 decrypt.bit256(key,text,encryptEncoding,outEncoding)
 
-#example
+# example
 var aes = require('./aes-ecb.js');
 var r = aes.encrypt.bit128('1111111111111111', 'abc','hex');
 
