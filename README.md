@@ -4,13 +4,13 @@ aes-ecb nodejs implement for communication with others languages like java, .net
 npm i aes-ecb-nodejs
 
 # API
-encrype
+encrypt
 aes-128-ecb
-encrype.bit128(key,text,outEncoding)
+encrypt.bit128(key,text,outEncoding)
 aes-192-ecb
-encrype.bit192(key,text,outEncoding)
+encrypt.bit192(key,text,outEncoding)
 aes-256-ecb
-encrype.bit256(key,text,outEncoding)
+encrypt.bit256(key,text,outEncoding)
 
 decrypt
 aes-128-ecb
